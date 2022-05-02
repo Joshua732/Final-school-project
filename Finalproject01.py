@@ -13,15 +13,17 @@ mainopen = open(Protect_file)
 # where file is read and printed
 readsfile = mainopen.read()
 mainopen.close()
+#loop checks opens and closes file getting string
 while Mainloop == 2:
     oldread = readsfile
     tempopen = open(Protect_file)
     newread = tempopen.read()
     mainopen.close()
-
+# old text compared to new text
     if oldread != newread:
         print(Protect_file + " " + "FILE HAS BEEN MODIFIED")
         input("")
         break
+    #waits to redo loop
     else:
         time.sleep(3)
