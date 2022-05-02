@@ -21,6 +21,7 @@ while Mainloop == 2:
 
     if oldread != newread:
         print(Protect_file + " " + "FILE HAS BEEN MODIFIED")
+        input("")
         break
     else:
         time.sleep(3)
