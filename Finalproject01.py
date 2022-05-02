@@ -9,12 +9,16 @@ print("please enter name of file with .txt at the end to monitor")
 Protect_file = input()
 print("File has been opened and its being monitored")
 #where its open by program
-mainopen = open(Protect_file )
+mainopen = open(Protect_file)
 # where file is read and printed
 readsfile = mainopen.read()
 mainopen.close()
 print(readsfile)
 while Mainloop == 2:
-    tempreadsfile = readsfile
-
+    oldread = readsfile
+    tempopen = open(Protect_file)
+    newread = tempopen.read()
+    print(newread)
+    print(oldread)
+    mainopen.close()
     Mainloop = 1
