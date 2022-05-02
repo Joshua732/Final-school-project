@@ -1,4 +1,6 @@
 import time
+# Just the Main loop
+Mainloop = 2
 # nothing here right now, Commit test 5
 # add program to list that you want to check, right now it will only check one for now
 Protectlist = [] #not used
@@ -12,3 +14,7 @@ mainopen = open(Protect_file )
 readsfile = mainopen.read()
 mainopen.close()
 print(readsfile)
+while Mainloop == 2:
+    tempreadsfile = readsfile
+
+    Mainloop = 1
